@@ -1,30 +1,72 @@
-import React from 'react';
+import React, { use, useState } from 'react';
 import { Link } from 'react-router';
+import { AuthContext } from '../../AuthProvider';
 
 const Registration = () => {
+const {createUser,setUser}=use(AuthContext);
+
+
+
+const [nameError,setNameError]= useState('')
+  const handleRegister=(e)=>{
+
+    
+
+
+
+
+    e.preventDefault();
+    console.log(e.target)
+    const form = e.target
+    const name= form.name.value 
+    if(name.length<5){
+      setNameError('Name should be gater than 5 character')
+    }else{
+      setNameError('')
+    }
+    const photo= form.photo.value 
+    const email= form.email.value 
+    const password= form.password.value 
+    console.log(name,photo,email,password)
+    createUser(email,password)
+    .then(res=>{
+      const user = res.user;
+      setUser(user);
+    })
+    .catch(err=>{
+      console.log(err)
+    })
+
+
+
+
+  }
     return (
         <div className='flex justify-center min-h-screen items-center'>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
       <div className="card-body">
         <h2 className='text-center text-3xl font-bold'>Register Your Account</h2>
-        <form >
+        <form onSubmit={handleRegister} className=''>
             <fieldset className="fieldset">
                 {/* name */}
         <label className="label">Name</label>
-          <input type="text" className="input" 
+          <input required  name='name' type="text" className="input" 
           placeholder="name" />
+          {
+            nameError && <p className='text-error text-sm'>{nameError}</p>
+          }
           {/* photoURL */}
           <label className="label">Photo URL</label>
-          <input type="email" className="input" 
+          <input  name='photo' type="text" className="input" 
           placeholder="Photo URL" />
                 {/* email */}
           <label className="label">Email</label>
-          <input type="email" className="input" 
+          <input required  name='email' type="email" className="input" 
           placeholder="Email" />
           {/* password */}
           <label className="label">Password</label>
-          <input type="password" className="input" placeholder="Password" />
-          <button className="btn btn-neutral mt-4">Register</button>
+          <input required name='password' type="password" className="input" placeholder="Password" />
+          <button type='submit' className="btn btn-neutral mt-4">Register</button>
          <p className='font-semibold  pt-5'>Already Have an Account? <Link className='text-red-500 ' to='/auth/login'>Login</Link></p>
 
         </fieldset>

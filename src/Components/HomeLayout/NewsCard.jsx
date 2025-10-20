@@ -13,6 +13,7 @@
 import React from "react";
 import { CiBookmark, CiShare2 } from "react-icons/ci";
 import { FaStar, FaRegEye } from "react-icons/fa";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
   if (!news) return null; // In case data is still loading
@@ -72,9 +73,9 @@ const NewsCard = ({ news }) => {
         {news.details
           ? `${news.details.slice(0, 150)}...`
           : "No description available."}
-        <span className="text-blue-600 cursor-pointer font-medium ml-1">
+        <Link to={`/news-details/${news?.id}`} className="text-blue-600 cursor-pointer font-medium ml-1">
           Read More
-        </span>
+        </Link>
       </p>
 
       {/* Footer */}
