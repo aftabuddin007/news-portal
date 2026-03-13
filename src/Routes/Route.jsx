@@ -9,6 +9,7 @@ import NewsDetails from "../Components/Pages/NewsDetails";
 import PrivateRoute from "../Components/PrivateRoute";
 import Loading from "../Components/Pages/Loading";
 import NewspaperAboutPage from "../Components/Pages/About";
+import NewspaperCareersPage from "../Components/Pages/CareerPage";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
     path:"/about",
     element:<NewspaperAboutPage></NewspaperAboutPage>
 },
+{
+    path:"/career",
+    element:<NewspaperCareersPage></NewspaperCareersPage>
+}
    ]
 },
 
