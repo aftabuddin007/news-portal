@@ -1,4 +1,4 @@
-Here is a professional, comprehensive, and clean README.md file tailored for your news portal. It highlights the importance and impact of a modern news platform while cleanly structuring the technical details of your MERN + Tailwind stack.
+uHere is a professional, comprehensive, and clean README.md file tailored for your news portal. It highlights the importance and impact of a modern news platform while cleanly structuring the technical details of your MERN + Tailwind stack.
 You can copy and paste this directly into your repository.
 ```markdown
 # 📰 Modern News Portal
@@ -63,17 +63,7 @@ Follow these steps to set up and run the project locally.
    cd backend
    npm install
    
-   ```
-   *Create a .env file in the backend directory and add your environment variables:*
-   ```env
-   PORT=5000
-   MONGO_URI=your_mongodb_connection_string
-   
-   ```
-   *Start the backend server:*
-   ```bash
-   npm start
-   
+
    ```
  3. **Frontend Setup:**
    ```bash
