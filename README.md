@@ -1,4 +1,4 @@
-uHere is a professional, comprehensive, and clean README.md file tailored for your news portal. It highlights the importance and impact of a modern news platform while cleanly structuring the technical details of your MERN + Tailwind stack.
+Here is a professional, comprehensive, and clean README.md file tailored for your news portal. It highlights the importance and impact of a modern news platform while cleanly structuring the technical details of your MERN + Tailwind stack.
 You can copy and paste this directly into your repository.
 ```markdown
 # 📰 Modern News Portal
@@ -94,7 +94,7 @@ Follow these steps to set up and run the project locally.
 
 ```
 ## 📝 License
-This project is open-source and available under the MIT License.
+This project is open-source and available under the MIT License. It is a us newsportal
 ```
 
 ***
