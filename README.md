@@ -57,51 +57,14 @@ Follow these steps to set up and run the project locally.
    git clone [https://github.com/your-username/news-portal.git](https://github.com/your-username/news-portal.git)
    cd news-portal
 
-```
- 2. **Backend Setup:**
-   ```bash
-   cd backend
-   npm install
-   
 
-   ```
- 3. **Frontend Setup:**
-   ```bash
-   cd ../frontend
-   npm install
    
    ```
-   *Start the React development server:*
-   ```bash
-   npm start
-   
-   ```
-## 📂 Project Structure
-```text
-├── backend/
-│   ├── config/         # Database configuration
-│   ├── models/         # MongoDB schemas (Article, User, etc.)
-│   ├── routes/         # API endpoints
-│   └── server.js       # Entry point for backend
-│
-└── frontend/
-    ├── public/         # Static assets
-    └── src/
-        ├── components/ # Reusable UI components (Navbar, Card, Footer)
-        ├── pages/      # Page views (Home, ArticleDetails, Category)
-        ├── App.js      # Main application routing
-        └── index.css   # Tailwind directives
 
 ```
 ## 📝 License
 This project is open-source and available under the MIT License. It is a us newsportal
 ```
 
-***
 
-### 💡 Tips for Customization:
-* **Images:** If you have screenshots of your homepage, you can add an `## Preview` section near the top and include `![Homepage Preview](./frontend/public/screenshot.png)` to make the repository stand out visually.
-* **Environment Variables:** If you add features like user authentication later (e.g., JWT), don't forget to update the `.env` section in the README.
-
-```
 
