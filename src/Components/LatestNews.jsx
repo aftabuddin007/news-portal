@@ -9,6 +9,7 @@ const LatestNews = () => {
  <p className='font-bold'>Lorem ipsum dolor sit amet consectetur  rem dolor sit fuga rerum laboriosam facilis labore, provident est nam atque sequi iste voluptas suscipit vel!</p>
  <p className='font-bold'>Lorem ipsum dolor sit amet consectetur  rem dolor sit fuga rerum laboriosam facilis labore, provident est nam atque sequi iste voluptas suscipit vel!</p>
  <p className='font-bold'>Lorem ipsum dolor sit amet consectetur  rem dolor sit fuga rerum laboriosam facilis labore, provident est nam atque sequi iste voluptas suscipit vel!</p>
+ <p className='font-bold'>Lorem ipsum dolor sit amet consectetur  rem dolor sit fuga rerum laboriosam facilis labore, provident est nam atque sequi iste voluptas suscipit vel!</p>
             
             </Marquee>
         </div>
